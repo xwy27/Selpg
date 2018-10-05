@@ -1,8 +1,6 @@
 # SELPG
 
-Select Page([Selpg](https://www.ibm.com/developerworks/cn/linux/shell/clutil/index.html)) Terminal Program, which helps read file and write file with given pages.
-
-Implement it with go.
+**Select Page([Selpg](https://www.ibm.com/developerworks/cn/linux/shell/clutil/index.html))** is a terminal program, which helps print files with given pages. Thr origin author develops it with `C` but for this program, implement it with **`GO`**.
 
 ## Usage
 
@@ -14,3 +12,9 @@ selpg:
   --l int      lines in one page (default 72)
   --s int      Start page of file (default -1)
 ```
+
+## Develop Tutorial
+
+Updating
+
+<!--[Implement SELPG with GO]()-->
