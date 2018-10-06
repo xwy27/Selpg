@@ -43,7 +43,7 @@ func main() {
 	errorHandler(err)
 
 	// read selected file
-	str, err := readFile()
+	str, err := readAndWrite()
 	errorHandler(err)
 	fmt.Println(str)
 
@@ -81,9 +81,9 @@ func handle_args() error {
 	return nil // Options right
 }
 
-/*============================== Read File FUNCTION ==============================*/
+/*============================== Read & Write FUNCTION ==============================*/
 
-func readFile() (string, error) {
+func readAndWrite() (string, error) {
 	result := ""
 	pageCount := 1
 	lineCount := 0
@@ -115,7 +115,9 @@ func readFile() (string, error) {
 				return "", err
 			}
 			pageCount++
-			result = strings.Join([]string{result, str}, "")
+			if pageCount >= *startPage && pageCount <= *endPage {
+				result = strings.Join([]string{result, str}, "")
+			}
 		}
 	} else {
 		pageCount = 1
