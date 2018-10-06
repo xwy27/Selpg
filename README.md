@@ -15,6 +15,4 @@ selpg:
 
 ## Develop Tutorial
 
-Updating
-
-<!--[Implement SELPG with GO]()-->
+[Implement SELPG with GO](https://xwy27.github.io/Service-Computing/Selpg-WithGO/)
