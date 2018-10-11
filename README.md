@@ -16,3 +16,8 @@ selpg:
 ## Develop Tutorial
 
 [Implement SELPG with GO](https://xwy27.github.io/Service-Computing/Selpg-WithGO/)
+
+## Test
+
+1. Simple print task in CLI test pass.
+1. Without printer, the -d option returns ERROR msg in my test.
